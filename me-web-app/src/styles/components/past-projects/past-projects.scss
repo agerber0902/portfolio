@@ -1,0 +1,15 @@
+@use '../../variables';
+
+.past-projects { margin-top: clamp(5rem, 11vw, 9rem); }
+.past-projects__heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.past-projects__eyebrow { margin: 0 0 10px; color: variables.$moss; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.past-projects h2 { margin: 0; font-size: clamp(2.8rem, 6vw, 5rem); letter-spacing: -.075em; line-height: .9; }
+.past-projects__controls { display: flex; gap: 8px; }
+.past-projects__controls button { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid variables.$ink; border-radius: 50%; background: transparent; color: variables.$ink; cursor: pointer; font-size: 1.2rem; transition: background .2s ease, color .2s ease; }
+.past-projects__controls button:hover { background: variables.$ink; color: variables.$paper; }
+.past-projects__viewport { width: 100%; min-width: 0; overflow: hidden; touch-action: pan-y; }
+.past-projects__track { display: flex; width: 100%; min-width: 0; transition: transform .42s cubic-bezier(.2, .8, .2, 1); }
+.past-projects__slide { flex: 0 0 100%; width: 100%; min-width: 0; max-width: 100%; overflow: hidden; }
+.past-projects__counter { margin: 7px 0 0; color: variables.$muted; font-size: .72rem; font-weight: 700; letter-spacing: .1em; }
+
+@media (max-width: 620px) { .past-projects__heading { align-items: flex-start; flex-direction: column; } }

@@ -1,0 +1,11 @@
+@use '../../variables.scss';
+
+.summary-container {
+
+    .header {
+        color: variables.$summary-header-color;
+    }
+    .summary-text {
+        color: variables.$summary-text-color;
+    }
+}
