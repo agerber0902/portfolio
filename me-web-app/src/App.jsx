@@ -114,7 +114,7 @@ function App() {
       <footer className="portfolio__footer" id="contact">
         <div className="portfolio__footer-links">
           <a href="mailto:agerber0902@gmail.com" target="_blank" rel="noreferrer">Let&apos;s connect <span aria-hidden="true">↗</span></a>
-          <a className="portfolio__resume-link" href="/resume.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+          <a className="portfolio__resume-link" href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
         </div>
       </footer>
     </main>
